@@ -238,8 +238,8 @@ class ValidationTask(object):
 
 class LearningTask(ValidationTask):
 
-    def __init__(self, initial_model, observations, allow_insertions=False, allow_deletions=False):
-        ValidationTask.__init__(self, initial_model, observations, allow_insertions=True)
+    def __init__(self, initial_model, observations, allow_insertions= True, allow_deletions= False):
+        ValidationTask.__init__(self, initial_model, observations, allow_insertions= allow_insertions, allow_deletions= allow_deletions)
 
     def learn(self, clean=True, suffix= None, lifted_inferred_trajectories= None):
         return self.validate(clean=clean, suffix= suffix, lifted_inferred_trajectories= lifted_inferred_trajectories)
