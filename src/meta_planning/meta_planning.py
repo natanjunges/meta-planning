@@ -254,8 +254,8 @@ class ModelRecognitionTask(object):
         self.tasks = [ValidationTask(m, observations, allow_insertions=True, allow_deletions=True) for m in models]
 
 
-    def recognize(self, t= 3000, suffix= None, lifted_inferred_trajectories= None):
-        solutions = [task.validate(parallel=False, t= t, suffix= suffix, lifted_inferred_trajectories= lifted_inferred_trajectories) for task in self.tasks]
+    def recognize(self, suffix= None, lifted_inferred_trajectories= None):
+        solutions = [t.validate(parallel=False, suffix= suffix, lifted_inferred_trajectories= lifted_inferred_trajectories) for t in self.tasks]
         model_space_size = get_model_space_size(self.models[0])
 
         return ModelRecognitionSolution(solutions, self.priors, model_space_size)
