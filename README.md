@@ -30,11 +30,6 @@ License sent by Diego Aineto (dieaigar@dsic.upv.es) via email to Natan Junges (n
 >
 > The last one is up to your judgement since it's more loosely connected.
 
-## Numpy's license
-This software is available at [numpy/numpy](https://github.com/numpy/numpy).
-
-The license is available at [BSD 3-Clause License](https://github.com/numpy/numpy/blob/main/LICENSE.txt).
-
 ## Madagascar's license
 This software is available at https://users.aalto.fi/~rintanj1/jussi/MADAGASCAR.TAR.
 
